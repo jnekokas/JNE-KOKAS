@@ -1,9 +1,9 @@
-
 <!DOCTYPE html>
 <html lang="id">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="JNE Kokas - Layanan pengiriman di Mall Kota Kasablanka, Jakarta Selatan. Tersedia JNE YES, REG, OKE, JTR, dan layanan internasional.">
     <title>JNE Kokas – JNE Mall Kota Kasablanka</title>
     <style>
         body {
@@ -11,6 +11,7 @@
             margin: 0;
             background-color: #ffffff;
             color: #333;
+            line-height: 1.6;
         }
         header {
             background-color: #d71920;
@@ -20,14 +21,19 @@
         }
         .logo {
             max-width: 180px;
+            height: auto;
             margin-bottom: 10px;
         }
-        section {
+        main {
             padding: 1.5rem;
             max-width: 900px;
-            margin: auto;
+            margin: 0 auto;
         }
         h1 {
+            color: #0b3d91;
+            margin-top: 0;
+        }
+        h2 {
             color: #0b3d91;
         }
         .highlight {
@@ -36,99 +42,154 @@
             font-weight: bold;
             color: #d71920;
             border: 1px solid #d71920;
-            margin-top: 1rem;
+            margin: 1.5rem 0;
             text-align: center;
         }
-        .contact-info, .services {
+        .contact-info, .services, .linktree {
             margin-top: 1.5rem;
-            line-height: 1.8;
         }
         .buttons {
-            margin-top: 2rem;
+            margin: 2rem 0;
             display: flex;
             flex-direction: column;
             gap: 1rem;
         }
-        .buttons a {
+        .button {
             text-align: center;
             padding: 1rem;
             text-decoration: none;
             color: white;
             border-radius: 5px;
             font-weight: bold;
+            display: block;
         }
         .whatsapp {
             background-color: #25D366;
         }
+        .whatsapp:hover {
+            background-color: #128C7E;
+        }
         .email {
             background-color: #0b3d91;
+        }
+        .email:hover {
+            background-color: #072a6b;
+        }
+        .linktree-button {
+            background-color: #111827;
+        }
+        .linktree-button:hover {
+            background-color: #000000;
+        }
+        ul {
+            padding-left: 1.2rem;
+        }
+        li {
+            margin-bottom: 0.5rem;
+        }
+        .map-container {
+            margin: 2rem 0;
+        }
+        iframe {
+            width: 100%;
+            height: 300px;
+            border: 0;
+            border-radius: 5px;
+        }
+        .tracking-form {
+            margin: 2rem 0;
+            display: flex;
+            gap: 0.5rem;
+        }
+        .tracking-form input {
+            flex-grow: 1;
+            padding: 0.75rem;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            font-size: 1rem;
+        }
+        .tracking-form button {
+            padding: 0 1.5rem;
+            background-color: #d71920;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+        .tracking-form button:hover {
+            background-color: #b5151b;
         }
         footer {
             text-align: center;
             font-size: 0.9rem;
             color: #777;
             padding: 2rem 0;
+            border-top: 1px solid #eee;
         }
     </style>
 </head>
 <body>
     <header>
-        <img src="https://www.jne.co.id/frontend/images/logo.png" alt="JNE Logo" class="logo" />
+        <img src="https://www.jne.co.id/frontend/images/logo.png" alt="JNE Logo" class="logo" width="180" height="60">
         <h1>JNE Mall Kota Kasablanka</h1>
         <p>Layanan Kiriman | Pick Up | Kerja Sama Agen</p>
     </header>
 
-    <section>
-        <p>Selamat datang di <strong>JNE Kokas</strong>! Kami siap melayani kebutuhan pengiriman Anda dari Mall Kota Kasablanka, Jakarta Selatan. Tersedia berbagai layanan ekspedisi cepat dan terjangkau.</p>
+    <main>
+        <section>
+            <p>Selamat datang di <strong>JNE Kokas</strong>! Kami siap melayani kebutuhan pengiriman Anda dari Mall Kota Kasablanka, Jakarta Selatan. Tersedia berbagai layanan ekspedisi cepat dan terjangkau.</p>
 
-        <div class="highlight">~ Tidak Ada Hari Libur, Hari Besar Tetap Buka ~</div>
+            <div class="highlight">~ Tidak Ada Hari Libur, Hari Besar Tetap Buka ~</div>
 
-        <div class="services">
-            <h2>Layanan Kami:</h2>
-            <ul>
-                <li><strong>JNE YES (Yakin Esok Sampai):</strong> Layanan pengiriman super cepat, sampai esok hari.</li>
-                <li><strong>JNE REG (Regular):</strong> Pengiriman hemat dengan estimasi waktu 1–3 hari kerja.</li>
-                <li><strong>JNE OKE (Ongkos Kirim Ekonomis):</strong> Tarif ekonomis untuk pengiriman non-prioritas.</li>
-                <li><strong>JNE Trucking (JTR):</strong> Layanan pengiriman paket besar & berat via armada truk.</li>
-                <li><strong>Layanan Internasional:</strong> Pengiriman ke luar negeri dengan kemudahan tracking & jaminan keamanan.</li>
-                <li><strong>Pick-up / Jemput Paket:</strong> Hubungi kami untuk layanan jemput paket ke lokasi Anda.</li>
-            </ul>
+            <div class="services">
+                <h2>Layanan Kami:</h2>
+                <ul>
+                    <li><strong>JNE YES (Yakin Esok Sampai):</strong> Layanan pengiriman super cepat, sampai esok hari.</li>
+                    <li><strong>JNE REG (Regular):</strong> Pengiriman hemat dengan estimasi waktu 1–3 hari kerja.</li>
+                    <li><strong>JNE OKE (Ongkos Kirim Ekonomis):</strong> Tarif ekonomis untuk pengiriman non-prioritas.</li>
+                    <li><strong>JNE Trucking (JTR):</strong> Layanan pengiriman paket besar & berat via armada truk.</li>
+                    <li><strong>Layanan Internasional:</strong> Pengiriman ke luar negeri dengan kemudahan tracking & jaminan keamanan.</li>
+                    <li><strong>Pick-up / Jemput Paket:</strong> Hubungi kami untuk layanan jemput paket ke lokasi Anda.</li>
+                </ul>
+            </div>
+
+            <div class="contact-info">
+                <h2>Kontak & Lokasi:</h2>
+                <p><strong>📍 Lokasi:</strong> Mall Kota Kasablanka, Lantai B2 Zona Biru</p>
+                <p><strong>📞 WhatsApp:</strong> <br>+62 881-0120-12826<br>+62 878-8222-2969</p>
+                <p><strong>📧 Email:</strong> agenjnekokas123@gmail.com</p>
+            </div>
+
+            <div class="buttons">
+                <a class="button whatsapp" href="https://wa.me/62881012012826" target="_blank" rel="noopener noreferrer">Chat WhatsApp 1</a>
+                <a class="button whatsapp" href="https://wa.me/6287882222969" target="_blank" rel="noopener noreferrer">Chat WhatsApp 2</a>
+                <a class="button email" href="mailto:agenjnekokas123@gmail.com">Kirim Email</a>
+            </div>
+        </section>
+
+        <section class="linktree">
+            <h2>Link Lengkap</h2>
+            <a class="button linktree-button" href="https://linktr.ee/JNE_KOKAS" target="_blank" rel="noopener noreferrer">Lihat Linktree Kami</a>
+        </section>
+
+        <div class="map-container">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d..."
+                width="600"
+                height="450"
+                allowfullscreen
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+                title="Lokasi JNE Kokas di Mall Kota Kasablanka">
+            </iframe>
         </div>
 
-        <div class="contact-info">
-            <h2>Kontak & Lokasi:</h2>
-            <p><strong>📍 Lokasi:</strong> Mall Kota Kasablanka, Lantai B2 Zona Biru</p>
-            <p><strong>📞 WhatsApp:</strong> <br>+62 881-0120-12826<br>+62 878-8222-2969</p>
-            <p><strong>📧 Email:</strong> agenjnekokas123@gmail.com</p>
-        </div>
-
-        <div class="buttons">
-            <a class="whatsapp" href="https://wa.me/62881012012826" target="_blank">Chat WhatsApp 1</a>
-            <a class="whatsapp" href="https://wa.me/6287882222969" target="_blank">Chat WhatsApp 2</a>
-            <a class="email" href="mailto:agenjnekokas123@gmail.com">Kirim Email</a>
-        </div>
-    </section>
-
-    <div class="linktree">
-      <h2>Link Lengkap</h2>
-      <a class="button" href="https://linktr.ee/JNE_KOKAS" target="_blank" style="background-color:#111827;">Lihat Linktree Kami</a>
-    </div>
-  </section>
-
-    <iframe
-  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d..."
-  width="100%"
-  height="300"
-  style="border:0;"
-  allowfullscreen=""
-  loading="lazy"
-  referrerpolicy="no-referrer-when-downgrade">
-</iframe>
-
-    <form action="https://www.jne.co.id/id/tracking/trace" method="get" target="_blank">
-  <input type="text" name="awb" placeholder="Masukkan No. Resi" required>
-  <button type="submit">Cek Resi</button>
-</form>
+        <form class="tracking-form" action="https://www.jne.co.id/id/tracking/trace" method="get" target="_blank" rel="noopener noreferrer">
+            <input type="text" name="awb" placeholder="Masukkan No. Resi" required>
+            <button type="submit">Cek Resi</button>
+        </form>
+    </main>
     
     <footer>
         &copy; 2025 JNE Kokas – All Rights Reserved.
