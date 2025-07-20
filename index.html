@@ -138,10 +138,16 @@
 <body>
     <header>
         <div class="logo-container">
-            <img src="https://i.imgur.com/JnQ9k9D.png" 
-     alt="JNE Logo" 
-     class="logo"
-     onerror="this.onerror=null;this.src='https://www.jne.co.id/assets/images/logo-jne.png';">
+        @media (max-width: 480px) {
+    .logo-container {
+        width: 150px;
+        padding: 8px;
+        background-color: white; /* Pastikan kontras dengan header merah */
+    }
+    .logo {
+        max-width: 140px;
+    }
+}
         </div>
         <h1>JNE Mall Kota Kasablanka</h1>
         <p>Layanan Kiriman | Pick Up | Kerja Sama Agen</p>
